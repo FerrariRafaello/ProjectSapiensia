@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extração Manual</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content" class="content-container">
+        <h1>Extração Manual de Dados</h1>
+        <pre>{{ content }}</pre>
+        <button onclick="location.href='{{ url_for('back') }}'">Voltar</button>
+    </div>
+</body>
+</html>
